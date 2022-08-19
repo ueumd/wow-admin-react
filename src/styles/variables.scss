@@ -1,0 +1,123 @@
+// 框架默认主题色
+$base-color-primary: var(--el-color-primary);
+
+// 主题色透明
+$base-color-primary-light1: var(--el-color-primary-light-1);
+$base-color-primary-light2: var(--el-color-primary-light-2);
+$base-color-primary-light3: var(--el-color-primary-light-3);
+$base-color-primary-light4: var(--el-color-primary-light-4);
+$base-color-primary-light5: var(--el-color-primary-light-5);
+$base-color-primary-light6: var(--el-color-primary-light-6);
+$base-color-primary-light7: var(--el-color-primary-light-7);
+$base-color-primary-light8: var(--el-color-primary-light-8);
+$base-color-primary-light9: var(--el-color-primary-light-9);
+// 全局变量定义
+
+$menuText: red;
+$menuActiveText: #409eff;
+$subMenuActiveText: #f4f4f5;
+
+$menuBg: #304156;
+$menuHover: #263445;
+
+$subMenuBg: #1f2d3d;
+$subMenuHover: #001528;
+$sideBarWidth: 210px;
+
+//navbar
+$navBarHeight: 50px;
+//tagsView
+$tagViewHeight: 32px;
+//app-main padding
+$appMainPadding: 10px;
+
+$asideWidth: 300px;
+
+// 边框配置
+$base-border-width-mini: 1px;
+$base-border-width-small: 3px;
+$base-border-width-default: 5px;
+$base-border-width-big: 10px;
+$base-border-radius: 2px;
+$base-border-radius-circle: 50%;
+$base-border-none: none;
+
+// 字体大小配置
+$base-font-size-small: 12px;
+$base-font-size-default: 14px;
+$base-font-size-big: 16px;
+$base-font-size-bigger: 18px;
+$base-font-size-max: 22px;
+$base-border-color: #dcdfe6;
+
+// icon配置
+$base-icon-width-default: 14px;
+$base-icon-width-small: 12px;
+$base-icon-width-big: 16px;
+$base-icon-width-bigger: 18px;
+$base-icon-width-max: 22px;
+$base-icon-width-super-max: 34px;
+$base-icon-height-super-max: 50px;
+
+// 字体颜色
+$base-font-color: #606266;
+$base-color-6: #666666;
+$base-color-3: #333333;
+$base-color-blue: $base-color-primary;
+$base-color-green: #91cc75;
+$base-color-white: #fff;
+$base-color-black: #000;
+$base-color-yellow: #fac858;
+$base-color-orange: #ff6700;
+$base-color-red: #ee6666;
+$base-color-gray: rgba(0, 0, 0, 0.65);
+
+// paddiing
+$base-main-padding: 20px 30px;
+$base-content-padding: 15px 20px;
+$base-padding: 20px;
+$base-cell-item-padding: 8px 0;
+$base-padding-20-10: 20px 10px;
+$base-padding-10-20: 10px 20px;
+$base-padding-5-15: 5px 15px;
+$base-padding-10: 10px;
+
+// margin
+$base-margin-5: 5px;
+$base-margin-10: 10px;
+$base-margin-15: 15px;
+$base-margin-20: 20px;
+$base-margin-20: 25px;
+
+//默认阴影
+$base-box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+$base-tabs-bar-height: 55px;
+$base-tag-item-height: 34px;
+$base-nav-bar-height: 60px;
+
+//默认动画
+$base-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), border 0s, background 0s, color 0s, font-size 0s;
+//默认动画长
+$base-transition-time: 0.3s;
+$base-transition-time-4: 0.4s;
+$base-color: #f45;
+$green-color: #11d86c;
+
+$color-red: red;
+$color-green: green;
+$color-blue: blue;
+
+$primary-color: #1890ff;
+
+//导出scss定义的样式变量
+//vite无法获取scss变量https://github.com/vitejs/vite/issues/1279
+//:export {
+//  menuText: $menuText;
+//  menuActiveText: $menuActiveText;
+//  subMenuActiveText: $subMenuActiveText;
+//  menuBg: $menuBg;
+//  menuHover: $menuHover;
+//  subMenuBg: $subMenuBg;
+//  subMenuHover: $subMenuHover;
+//  sideBarWidth: $sideBarWidth;
+//}

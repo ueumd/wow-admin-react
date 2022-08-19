@@ -1,0 +1,98 @@
+@import "./common.scss";
+@import "./variables.scss";
+@import "./scss-suger.scss";
+
+//scroll
+@mixin main-show-wh() {
+	/* css 声明 */
+	height: calc(100vh - #{$navBarHeight} - #{$tagViewHeight} - #{$appMainPadding * 2});
+	width: 100%;
+}
+.scroll-y {
+	@include main-show-wh();
+	overflow-y: auto;
+}
+.scroll-x {
+	@include main-show-wh();
+	overflow-x: auto;
+}
+.scroll-xy {
+	@include main-show-wh();
+	overflow: auto;
+}
+
+#root {
+	height: 100vh;
+}
+
+.container {
+	display: flex;
+	min-width: 850px;
+	height: 100%;
+	.ant-layout-sider {
+		& ::-webkit-scrollbar {
+			background-color: #001529;
+		}
+		& ::-webkit-scrollbar-thumb {
+			background-color: #41444b;
+		}
+	}
+	.ant-layout {
+		/* 防止 tabs 超出不收缩 */
+		overflow-x: hidden;
+		.ant-layout-content {
+			box-sizing: border-box;
+			padding: 20px;
+			margin: 10px 13px;
+			overflow: auto;
+			background-color: #ffffff;
+			border-radius: 4px;
+			box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
+			.content {
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+}
+
+.red-box {
+	border: 1px dashed red;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+.blue-box {
+	border: 1px dashed blue;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+button {
+	margin-right: 10px;
+}
+
+input {
+	padding: 5px;
+}
+
+//滚动条样式
+::-webkit-scrollbar {
+	width: 8px;
+	height: 5px;
+}
+::-webkit-scrollbar-thumb {
+	border-radius: 1em;
+	background-color: rgba(100, 100, 100, 0.3);
+}
+::-webkit-scrollbar-track {
+	border-radius: 1em;
+	background-color: rgba(100, 100, 100, 0.1);
+}
+
+.page-loading {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}

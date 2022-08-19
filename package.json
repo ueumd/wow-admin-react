@@ -9,8 +9,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "antd": "^4.22.6",
+    "axios": "^0.27.2",
+    "i18next": "^21.9.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-i18next": "^11.18.4"
   },
   "devDependencies": {
     "@types/react": "^18.0.15",
@@ -19,12 +23,17 @@
     "@typescript-eslint/parser": "^5.33.0",
     "@vitejs/plugin-react": "^2.0.0",
     "eslint": "^8.0.1",
-    "eslint-config-standard": "^17.0.0",
-    "eslint-plugin-import": "^2.25.2",
-    "eslint-plugin-n": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.30.1",
+    "mobx": "^6.6.1",
+    "mobx-react": "^7.5.2",
+    "mockjs": "^1.1.0",
+    "prettier": "^2.7.1",
+    "sass": "^1.54.4",
     "typescript": "^4.6.4",
-    "vite": "^3.0.0"
+    "vite": "^3.0.0",
+    "vite-plugin-mock": "^2.9.6"
   }
 }
