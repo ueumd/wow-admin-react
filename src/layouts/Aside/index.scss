@@ -1,0 +1,22 @@
+.layout-aside-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  .ant-menu-root {
+    flex: 1;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}
+
+.logo-box {
+  height: 40px;
+  text-align: center;
+  background: #001529;
+  .title {
+    margin-left: 10px;
+    color: white;
+    font-size: 18px;
+  }
+}

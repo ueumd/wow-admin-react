@@ -1,0 +1,25 @@
+//.ant-menu-item-selected {
+//  position: relative;
+//}
+//.ant-menu-item-selected:before {
+//  width: 4px;
+//  height: 20px;
+//  position: absolute;
+//  content: "";
+//  left: 0;
+//  background: #1890ff;
+//}
+
+.ant-menu-submenu-selected > .ant-menu-submenu-title {
+  position: relative;
+}
+
+// 父级菜单高亮
+.ant-menu-submenu-selected > .ant-menu-submenu-title:before {
+  width: 5px;
+  height: 20px;
+  position: absolute;
+  content: "";
+  left: 0;
+  background: #1890ff;
+}
