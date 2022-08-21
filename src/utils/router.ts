@@ -14,7 +14,8 @@ export function generateRouterList(userRouters) {
 			key: router.path,
 			path: router.path,
 			icon: React.createElement(Icons[router.meta.icon]),
-			children: []
+			// children: []
+			children: undefined
 		}
 		if (router.children && router.children.length) {
 			router.children = router.children.map(it => {

@@ -4,6 +4,7 @@ export default [
   {
     url: '/web/api/book/getBookList',
     method: 'post',
+    timeout: 1000,
     response: ({ body }) => {
       return {
         code: 0,
@@ -11,7 +12,7 @@ export default [
         data: {
           currentPage: body.currentPage,
           numPerPage: body.numPerPage,
-          totalCount: 200,
+          totalCount: 100,
           recordList: [
             {
               id: 16,
@@ -144,9 +145,7 @@ export default [
               sequence: 10,
               imageList: []
             }
-          ],
-          pageCount: 2,
-          listCount: 200
+          ]
         }
       }
     }

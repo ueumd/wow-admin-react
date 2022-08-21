@@ -34,6 +34,7 @@ export default () => {
 		if (openKeys.length === 0 || openKeys.length === 1) return setOpenKeys(openKeys)
 		const latestOpenKey = openKeys[openKeys.length - 1]
 		if (latestOpenKey.includes(openKeys[0])) return setOpenKeys(openKeys)
+		// @ts-ignore
 		setOpenKeys([latestOpenKey])
 	}
 

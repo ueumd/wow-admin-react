@@ -1,5 +1,6 @@
 import { Card } from "antd"
-import { useState } from "react"
+import { useEffect, useState } from "react"
+import api from "@/api"
 
 const gridStyle: any = {
 	width: "25%",
@@ -7,7 +8,18 @@ const gridStyle: any = {
 }
 
 const Home = () => {
-	const [list, setList] = useState([])
+	let [list, setList] = useState([])
+
+	const getResource = () => {
+		api.user.resource().then(res => {
+			setList(res)
+		})
+	}
+
+	useEffect(() => {
+		getResource()
+	}, [])
+
 	const navigateTo = url => {
 		window.open(url, "_blank")
 	}

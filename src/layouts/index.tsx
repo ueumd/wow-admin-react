@@ -5,9 +5,9 @@ import { useStore } from "@/hooks/store-hook"
 import utils from "@/utils"
 import { routeList } from "@/routers"
 
-import Aside from "./Aside/index.jsx"
-import Header from "./Header/index.jsx"
-import Tab from "./Tabs/index.jsx"
+import Aside from "./Aside"
+import Header from "./Header"
+import Tab from "./Tabs"
 
 import "./index.scss"
 

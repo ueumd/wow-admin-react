@@ -12,7 +12,7 @@ const NotFound = lazy(() => import("@/components/ErrorMessage/404"))
 const routeList: Array<any> = []
 
 
-const metaRouters: any = import.meta.globEager("./modules/*.js")
+const metaRouters: any = import.meta.globEager("./modules/*.ts")
 Object.keys(metaRouters).forEach(item => {
 	Object.keys(metaRouters[item]).forEach(key => {
 		routeList.push(...metaRouters[item][key])
