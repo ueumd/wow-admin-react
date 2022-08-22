@@ -4,12 +4,13 @@ import { Spin } from "antd"
 
 import CreateAxiosInstance from "@/service/request"
 import type { IAxiosRequestConfig, IAxiosResponse, AxiosError } from "@/service/request"
+import utils from "@/utils"
 
 const request = new CreateAxiosInstance({
 	baseURL: "",
 	timeout: 10000,
 	headers: {
-		token: "token"
+		token: utils.getToken()
 	},
 	abort: false,
 	load: false
@@ -52,6 +53,11 @@ request.requestStart = (config: IAxiosRequestConfig) => {
 		}
 		requestNum += 1
 	}
+	if (config.headers!.token) {
+		config.headers!.token = utils.getToken()
+	}
+
+	return config
 }
 
 request.requestEnd = (config: IAxiosRequestConfig) => {
